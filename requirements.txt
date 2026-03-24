@@ -1,0 +1,12 @@
+pandas 
+numpy 
+scipy 
+scikit-learn 
+matplotlib 
+seaborn
+plotly
+openai
+python-dotenv
+langchain 
+langchain-openai
+flask
