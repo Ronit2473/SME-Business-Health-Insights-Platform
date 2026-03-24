@@ -4,31 +4,8 @@ Empowering Small Businesses with AI-Driven Predictive Analytics
 The SME Business Health Insights Platform is an all-in-one data intelligence tool designed to bridge the gap between raw business data and actionable strategy. Built for the nebulon hackathon, this platform provides small business owners with the same predictive power used by retail giants.
 
 
-# 🏗️ System Architecture
-Our platform follows a modern 3-tier AI architecture, separating data ingestion, processing, and multi-model intelligence.
 
-graph TD
-    %% User Layer
-    User((Business Owner)) <-->|Uploads CSV / Chats| UI[Web Dashboard]
 
-    %% Frontend Layer
-    subgraph Frontend [Client Layer]
-        UI -->|POST /api/upload| Flask[Flask API Bridge]
-        UI -->|POST /api/chat| Flask
-        UI -->|POST /api/predict| Flask
-    end
-
-    %% Backend Layer
-    subgraph Backend [Logic Engine]
-        Flask <--> EDA[Pandas Data Engine]
-        EDA -->|Cleaned Metrics| UI
-    end
-
-    %% AI/ML Layer
-    subgraph Intelligence [Intelligence Layer]
-        ML[Scikit-Learn: Demand Predictor]
-        LLM[LangChain + NVIDIA Llama 3.1]
-    end
 
 # 🚀 Key Features
 🔮 Predictive Demand Modeling: Uses a trained Scikit-Learn Linear Regression model to forecast future inventory needs based on price, weather, holidays, and promotions.
