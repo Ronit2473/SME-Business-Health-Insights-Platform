@@ -8,6 +8,7 @@ The SME Business Health Insights Platform is an all-in-one data intelligence too
 Our platform follows a modern 3-tier AI architecture, separating data ingestion, processing, and multi-model intelligence.
 
 graph TD
+
     %% User Layer
     User((Business Owner)) <-->|Uploads CSV / Chats| UI[Web Dashboard]
 
