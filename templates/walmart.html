@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Walmart AI Insights</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+    <style>
+        body {
+            background: #0f172a;
+            color: white;
+            font-family: Arial;
+        }
+
+        .container {
+            width: 95%;
+            margin: auto;
+        }
+
+        .section {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 25px;
+        }
+
+        /* 🔥 IMPORTANT */
+        canvas {
+            width: 100% !important;
+            height: 350px !important;
+        }
+
+        #insights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .reco {
+            background: #0f172a;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .reco h4 {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <h2 class="logo">⚡ MatrixAI</h2>
+    <div class="nav-links">
+        <a href="/">Dashboard</a>
+        <a href="/analysis">AI Analysis</a>
+        <a href="/walmart-insights">Store Insights</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <h1>📊 Walmart AI Insights Dashboard</h1>
+
+    <div class="grid">
+
+        <div class="section">
+            <h2>📈 Revenue Trend</h2>
+            <canvas id="trendChart"></canvas>
+        </div>
+
+        <div class="section">
+            <h2>💰 Revenue vs Loss vs Profit</h2>
+            <canvas id="revenueCompare"></canvas>
+        </div>
+
+        <div class="section">
+            <h3>🏆 Top 5 Categories</h3>
+            <canvas id="topCategoryChart"></canvas>
+        </div>
+
+        <div class="section">
+            <h2>📊 Category Performance</h2>
+            <canvas id="categoryChart"></canvas>
+        </div>
+
+        <div class="section">
+            <h2>⭐ Customer Insights</h2>
+            <canvas id="customerChart"></canvas>
+        </div>
+
+        <div class="section">
+            <h2>⚠️ Anomaly Detection</h2>
+            <canvas id="anomalyChart"></canvas>
+        </div>
+
+    </div>
+
+    <div class="section">
+        <h2>💡 AI Recommendations</h2>
+        <div id="insights"></div>
+    </div>
+
+</div>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/static/walmart.js"></script>
+
+</body>
+</html>

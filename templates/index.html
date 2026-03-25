@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Retail AI Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- 🔥 NAVBAR -->
+<div class="navbar">
+    <h2 class="logo">⚡ MatrixAI</h2>
+    <div class="nav-links">
+        <a href="/">Dashboard</a>
+        <a href="/analysis">AI Analysis</a>
+        <a href="/walmart-insights">Store Insights</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- TITLE -->
+    <h1>MatrixAI Dashboard</h1>
+
+    <!-- 🔥 KPI CARDS -->
+    <div id="kpis" class="grid"></div>
+
+    <!-- 📊 TREND CHART -->
+    <div class="chart-card">
+        <h3>📈 Revenue Trend</h3>
+        <canvas id="trendChart"></canvas>
+    </div>
+
+    <!-- 🤖 AI RECOMMENDATIONS -->
+    <div class="recommendation-section">
+        <h2>🚨 AI Recommendations</h2>
+        <div id="recommendations" class="recommendations-grid"></div>
+    </div>
+
+    <!-- 🤖 CHAT SECTION -->
+    <div class="chat-section">
+        <h3>🤖 Ask AI</h3>
+
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Ask about your data..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+        <div id="chat-box" class="chat-box"></div>
+    </div>
+
+</div>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/static/script.js"></script>
+
+</body>
+</html>

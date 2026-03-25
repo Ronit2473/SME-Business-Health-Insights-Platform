@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Analysis</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- 🔥 NAVBAR -->
+<div class="navbar">
+    <h2 class="logo">⚡ MatrixAI</h2>
+    <div class="nav-links">
+        <a href="/">Dashboard</a>
+        <a href="/analysis">AI Analysis</a>
+        <a href="/walmart-insights">Store Insights</a>
+    </div>
+</div>
+
+<div class="container">
+
+    <h1>🧠 AI Dataset Insights</h1>
+
+    <h3 style="text-align:center; color:#94a3b8; margin-bottom:20px;">
+        Upload your dataset to generate AI insights 🚀
+    </h3>
+
+    <div style="text-align:center; margin-bottom:30px;">
+        <input type="file" id="fileInput" accept=".csv" />
+        <button onclick="uploadFile()" class="btn">
+            Upload & Analyze
+        </button>
+    </div>
+
+    <div id="recommendations"></div>
+
+</div>
+
+<script src="/static/analysis.js"></script>
+
+</body>
+</html>
